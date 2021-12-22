@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(38, 56, 78);
+    width: 100vw;
+    height: auto;
+    padding-top: 50px;
+    background-color: rgb(38, 56, 78);
+    overflow-x: hidden;
+    font-family: 'Poppins';
+}
+.content {
+    width: 100vw;
+    height: auto;
+    padding-top: 80px;
+}
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container h1 {
+    margin: 20px;
+    color:rgb(241, 138, 41);
+}
+.container p {
+    max-width: 600px;
+    text-align: left;
+    margin-bottom: 20px;
+    color:rgb(202, 120, 43);
+}
+
+#title {
+    font-weight: bold;
+}
+.main-nav {
+    margin-left: 60px;
+    position: absolute;
+    padding-top: 10px 0 10px;
+    right: 0;
+    top:15px;
+}
+.main-nav-list li {
+    display: inline;
+}
+.main-nav-list li a{
+    margin-right: 20px;
+    color:rgb(241, 138, 41);
+}
+.text {
+    color: rgb(38, 56, 78)  ;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration:none;
+}
+.text:visited {
+    color: rgb(42, 64, 92);
+}
+.wrapbtn {
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+}
+.openbtn {
+    position:fixed;
+    top: 10px;
+    left: 10px;
+}
+.wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform .5s ease-in-out;
+}
+.wrap.visible {
+    transform: translateX(0%);
+}
+.wrapblack {
+    background-color: rgb(42, 42, 42);
+    width:60%;
+    max-width: 480px;
+    transition-delay: .2s ;
+}
+.wrapblack .wrapwhite {
+    background-color: rgb(241, 138, 41);
+    width: 95%;
+    padding: 40px;
+    position: relative;
+}
+.closebtn {
+    opacity: 0.4;
+    position:absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.list {
+    list-style-type:none;
+    padding: 0;
+}
+.list li ,.main-nav-list li {
+    margin: 20px 0;
+}
+.list li a {
+    color: rgb(56, 83, 116);
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.main-nav-list li a {
+    color: rgb(241, 138, 41);
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+iframe {
+    border: 0;
+}
+@media(max-width: 600px) {
+    .main-nav {
+        display: none;
+    }
+}
+.fa-times {
+    color: rgb(56, 83, 116);
+}
+.fa-bars {
+    color: rgb(241, 138, 41);
+}
